@@ -13,6 +13,10 @@ Runtime: 72 ms, faster than 95.83% of C online submissions for LRU Cache.
 Memory Usage: 26.7 MB, less than 100.00% of C online submissions for LRU Cache.
 */
 
+// I have implemented both 'put' and 'get' operations to be O(1) in time
+// using a hash-table and doubly-linked list to store the use history
+// and evict the LRU element
+
 #include <stdio.h>
 #include <stdlib.h>
 typedef struct DLLNode {
