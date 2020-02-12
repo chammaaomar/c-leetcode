@@ -9,8 +9,6 @@ Memory Usage: 7.4 MB, less than 25.00% of C online submissions for Add Binary.
 #include <stdlib.h>
 
 typedef struct digit_adder {
-    // bit fields; C may still decide to allocate a byte
-    // i.e. sizeof(digit_adder) == 1 byte due to alignment
     int add;
     int carry_over;
 } digit_adder;
