@@ -24,6 +24,9 @@ int str2num(char* str) {
 int charInCommon(int i, int j, int* wordNums) {
     // checks if a common bit is turned on; i.e. an alphabetical
     // character is shared between the two strings.
+    // this function indexes into a pre-computed array so we 
+    // don't have to compute the bit vector representation
+    // on each function call
     int bitVector_i = wordNums[i];
     int bitVector_j = wordNums[j];
     return bitVector_i & bitVector_j;
